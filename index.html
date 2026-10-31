@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2048 Better</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <button class="ic" id="bSet" aria-label="Settings">☰</button>
+    <h1>2048</h1>
+    <div><button class="ic" id="bLb" aria-label="Leaderboard">🏆</button><button class="ic" id="bNew" aria-label="New game">↻</button></div>
+  </header>
+  <div class="stats">
+    <div class="box"><span>SCORE</span><b id="score">0</b></div>
+    <div class="box alt"><span>BEST</span><b id="best">0</b></div>
+  </div>
+  <div class="row"><select id="mode"></select><button id="bBot" class="pill">🤖 Challenge bot</button><span id="timer" class="pill hidden"></span></div>
+  <div id="combo"></div>
+  <div id="board" class="board"></div>
+  <p id="hint" class="hint"></p>
+  <div id="botPanel" class="hidden">
+    <div class="stats"><div class="box"><span>🤖 BOT</span><b id="botScore">0</b></div><div class="box alt"><span>YOU</span><b id="youScore">0</b></div></div>
+    <div id="botBoard" class="board small"></div>
+  </div>
+  <nav class="tools">
+    <button data-t="undo">↩️<i></i><small>Undo</small></button>
+    <button data-t="swap">🔀<i></i><small>Swap</small></button>
+    <button data-t="hammer">🔨<i></i><small>Remove</small></button>
+    <button data-t="shuffle">🎲<i></i><small>Shuffle</small></button>
+  </nav>
+</main>
+
+<div id="mSet" class="modal hidden"><div class="card">
+  <h2>Settings</h2>
+  <label>Theme</label><div id="themes" class="themes"></div>
+  <label>Board size<select id="size"><option value="4">4×4</option><option value="5">5×5</option><option value="6">6×6</option></select></label>
+  <label>Bot level<select id="lvl"><option value="1">Rookie</option><option value="2">Pro</option><option value="3">Genius</option></select></label>
+  <label>Effects<input type="checkbox" id="fx"></label>
+  <label>Sound<input type="checkbox" id="snd"></label>
+  <label>Your name<input id="name" maxlength="12"></label>
+  <button class="pill" data-close>Done</button>
+</div></div>
+
+<div id="mLb" class="modal hidden"><div class="card">
+  <h2>🏆 Leaderboard</h2><p class="hint">Top 10 on this device</p>
+  <ol id="lbList"></ol>
+  <button class="pill" id="lbClear">Clear</button> <button class="pill" data-close>Close</button>
+</div></div>
+
+<div id="mEnd" class="modal hidden"><div class="card">
+  <h2 id="endT"></h2><p id="endP"></p>
+  <button class="pill" id="again">Play again</button> <button class="pill" data-close>Close</button>
+</div></div>
+<script src="script.js"></script>
+</body>
+</html>
