@@ -7,7 +7,7 @@ Plain HTML, CSS and JavaScript. No libraries. No installs.
 
 <br>
 
-[![Play Now](https://img.shields.io/badge/▶_PLAY_NOW-2563eb?style=for-the-badge&logoColor=white)](https://YOUR-USERNAME.github.io/2048-better/)
+[![Play Now](https://img.shields.io/badge/▶_PLAY_NOW-2563eb?style=for-the-badge&logoColor=white)](https://meliolabs.github.io/2048-better/)
 
 <br>
 
@@ -48,7 +48,7 @@ Slide the tiles. When two tiles with the same number touch, they **merge** into 
 Or with git:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/2048-better.git
+git clone https://github.com/meliorlabs/2048-better.git
 cd 2048-better
 # then open index.html
 ```
@@ -78,7 +78,7 @@ All four directions share one function. The board is flipped or rotated so every
 - [ ] Light theme toggle
 - [ ] Sound effects
 
-Ideas or bugs? [Open an issue](https://github.com/YOUR-USERNAME/2048-better/issues).
+Ideas or bugs? [Open an issue](https://github.com/meliorlabs/2048-better/issues).
 
 ## 🙏 Credits
 
