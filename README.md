@@ -7,7 +7,7 @@ Plain HTML, CSS and JavaScript. No libraries. No installs.
 
 <br>
 
-[![Play Now](https://img.shields.io/badge/▶_PLAY_NOW-2563eb?style=for-the-badge&logoColor=white)](https://meliolabs.github.io/2048-better/)
+[![Play Now](https://img.shields.io/badge/▶_PLAY_NOW-2563eb?style=for-the-badge&logoColor=white)](https://meliorlabs.github.io/2048-better/)
 
 <br>
 
