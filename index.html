@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2048 Better</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <button class="ic" id="bMenu" aria-label="Menu">☰</button>
+    <h1>2048</h1>
+    <button class="ic" id="bNew" aria-label="New game">↻</button>
+  </header>
+  <p id="sub"></p>
+  <div id="np" class="hidden"><span class="eq"><i></i><i></i><i></i></span><small>NOW PLAYING</small><em id="npName"></em><button id="npPause" aria-label="Pause">⏸</button><button id="npNext" aria-label="Next song">⏭</button></div>
+  <div class="stats">
+    <div class="box"><span>SCORE</span><b id="score">0</b></div>
+    <div class="box alt"><span>BEST</span><b id="best">0</b></div>
+  </div>
+  <div class="stage">
+    <div id="board" class="board"><div class="grid"></div><div class="tiles"></div></div>
+    <div id="toast"></div>
+  </div>
+  <p id="hint"></p>
+  <nav class="tools">
+    <button data-t="undo"><span>↩</span><u></u></button>
+    <button data-t="swap"><span>⇄</span><u></u></button>
+    <button data-t="hammer"><span>✕</span><u></u></button>
+    <button data-t="shuffle"><span>⤮</span><u></u></button>
+  </nav>
+  <button id="botBar" class="hidden"><span>🤖 Bot</span><b id="botScore">0</b></button>
+  <div id="botBoard" class="board small hidden"><div class="grid"></div><div class="tiles"></div></div>
+</main>
+
+<div id="scrim" class="hidden"></div>
+<aside id="menu">
+  <h2>Menu</h2>
+  <div id="sections"></div>
+  <h3>Your name</h3><input id="name" maxlength="12">
+  <button class="wide" id="bLb">🏆 Leaderboard</button>
+</aside>
+
+<div id="mLb" class="modal hidden"><div class="card"><h2>🏆 Leaderboard</h2><p class="muted">Top 10 on this device</p><ol id="lbList"></ol>
+  <div class="btns"><button id="lbClear">Clear</button><button data-close>Close</button></div></div></div>
+<div id="mEnd" class="modal hidden"><div class="card"><h2 id="endT"></h2><p id="endP"></p>
+  <div class="btns"><button id="again" class="go">Play again</button><button data-close>Close</button></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>
